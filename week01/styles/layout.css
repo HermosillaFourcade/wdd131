@@ -1,0 +1,67 @@
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor central */
+.contenedor {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Encabezado */
+header {
+    background-color: #333333;
+    color: white;
+    height: 116px;
+    padding: 20px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: black;
+    height: 59px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal y lateral */
+.content {
+    display: flex;
+    align-items: stretch;
+    min-height: 313px;
+}
+
+main {
+    background-color: #CCCCCC;
+    width: 72%;
+    padding: 20px;
+}
+
+aside {
+    background-color: white;
+    width: 28%;
+    padding: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333333;
+    color: white;
+    height: 198px;
+    padding: 20px;
+    text-align: center;
+}
