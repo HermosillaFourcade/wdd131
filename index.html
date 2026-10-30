@@ -2,10 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Pablo Hermosilla</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Pablo Hermosilla">
+    <meta name="author" content="Pablo Hermosilla">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="week01/styles/base.css">
+    <script src="week01/scripts/getdate.js"></script>
 </head>
 <body>
-   <h1>WDD 131 HermosillaFourcade</h1> 
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.byupw.instructure.com" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scripture/" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Pablo Exequiel Hermosilla Fourcade</h1>
+        <div class="content">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <p>
+                       Hello! My name is Pablo. I am from Chile.
+                        I enjoy learning new things, technology,
+                        and developing new skills. I am currently
+                        studying web development and learning
+                        HTML, CSS, and JavaScript. 
+                    </p>
+                    <img src="week01/images/profile.jpg" alt="Personal photo">
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>My Country</h2>
+                <div class="card-content">
+                    <p>
+                        Chile is a beautiful country located in
+                        South America. It is known for its
+                        mountains, lakes, forests, and beautiful
+                        landscapes. I am proud of my country
+                        and its natural beauty.
+                    </p>
+                    <img src="week01/images/chile.jpg" alt="chile photo">
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <p>
+             &copy; <span id="currentyear"></span>
+            Pablo Exequiel Hermosilla Fourcade |
+            Chile
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+   
 </body>
 </html>
