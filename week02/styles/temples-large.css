@@ -17,7 +17,7 @@ header nav a {
 
 /* --- Ajustes del Grid para Pantallas Grandes --- */
 .gallery-temples {
-    max-width: none;              /* 🔥 Rompe el límite de 400px que pusimos en móvil */
+    max-width: none;              /* Rompe el límite de 400px que pusimos en móvil */
     grid-template-columns: repeat(3, 1fr); /* Alterna a 3 columnas perfectas */
     gap: 30px;                    /* Más espacio entre las tarjetas */
 }
