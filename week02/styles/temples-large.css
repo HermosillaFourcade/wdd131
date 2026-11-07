@@ -1,0 +1,28 @@
+#menu-button {
+    display: none; /* Oculta el botón de hamburguesa en computadoras */
+}
+
+header nav {
+    display: flex !important; /* Muestra el menú */
+    flex-direction: row;      /* Enlaces horizontales */
+    position: static;
+    width: auto;
+    gap: 10px;
+}
+
+header nav a {
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* --- Ajustes del Grid para Pantallas Grandes --- */
+.gallery-temples {
+    max-width: none;              /* 🔥 Rompe el límite de 400px que pusimos en móvil */
+    grid-template-columns: repeat(3, 1fr); /* Alterna a 3 columnas perfectas */
+    gap: 30px;                    /* Más espacio entre las tarjetas */
+}
+
+/* Reducimos ligeramente la altura de las fotos en PC para mantener la proporción */
+figure img {
+    height: 200px; 
+}

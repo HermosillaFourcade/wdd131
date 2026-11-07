@@ -140,8 +140,8 @@ img.profile {
 }
 
 img.flag {
-    width: 110px !important;
-    height: auto !important;
+    width: 110px;
+    height: auto;
     object-fit: contain;
 }
 
