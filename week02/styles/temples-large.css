@@ -1,3 +1,4 @@
+@media (min-width: 700px){
 #menu-button {
     display: none; /* Oculta el botón de hamburguesa en computadoras */
 }
@@ -25,4 +26,5 @@ header nav a {
 /* Reducimos ligeramente la altura de las fotos en PC para mantener la proporción */
 figure img {
     height: 200px; 
+}
 }
