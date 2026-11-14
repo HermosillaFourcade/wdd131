@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px) {
+  main {
+    position: relative;
+  }
+
+  .card {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    padding: 1.2rem 1.5rem 1.5rem 0;
+    width: 310px;
+    text-align: left;
+  }
+
+  .card h2 {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: -10px;
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 85%;
+  }
+
+  .data {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .weather {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+    margin-left: 0.5rem;
+  }
+
+  .card ul {
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+  }
+}
