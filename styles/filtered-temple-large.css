@@ -1,0 +1,29 @@
+@media (min-width: 700px) {
+    #menu-button {
+        display: none;
+    }
+
+    header nav {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        gap: 10px;
+    }
+
+    header nav a {
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+
+    .gallery-temples {
+        max-width: none;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .gallery-temples section img {
+        height: 200px;
+    }
+}
+

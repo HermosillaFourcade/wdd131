@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #4a148c; /* Morado obscuro principal */
+    --accent-color: #ffffff;
+    --text-color: #333333;
+    --bg-page: #fdfbfe;       /* Blanco sutilmente cálido */
+    --bg-card: #f3f3f3;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-color);
+}
+
+/* --- Header y Navegación (CSS Flex) --- */
+header {
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+#title {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Botón menú hamburguesa ☰ */
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Ocultar navegación en móvil por defecto */
+header nav {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    z-index: 10;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+}
+
+/* Clase que el script temples.js agregará/quitará al presionar el botón */
+header nav.open {
+    display: flex;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+/* Efecto Hover solicitado */
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Main (Ancho limitado y centrado horizontal) --- */
+main {
+    max-width: 1100px;
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+/* --- Grid de Templos (1 Columna en móvil) --- */
+.gallery-temples {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 25px;
+    max-width: 400px;           
+    margin: 0 auto;             
+}
+
+.gallery-temples section {
+    background-color: var(--bg-card);
+    border: 1px solid #dddddd;
+    margin: 0;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-temples section:hover {
+    transform: translateY(-3px);
+}
+
+.gallery-temples section h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.gallery-temples section p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+}
+
+.gallery-temples section .label {
+    font-variant: small-caps;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.gallery-temples section img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+

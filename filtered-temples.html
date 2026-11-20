@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Album Temples</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Pablo Hermosilla">
+    <meta name="author" content="Pablo Hermosilla">
+    <link href="https://fonts.googleapis.com/" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</head>
+<body>
+    <header>
+         <span id="title">Temple Album</span>
+         <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+         </button>
+        <nav>
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 id="category-title">Home</h1>
+        <div class="gallery-temples"></div>
+    </main>
+    <footer>
+         <p>
+             &copy; <span id="currentyear"></span>
+            Pablo Exequiel Hermosilla Fourcade |
+            Chile
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
