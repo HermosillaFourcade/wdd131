@@ -199,3 +199,20 @@ footer p {
     color: #FCD34D;
     font-size: 0.85rem;
 }
+
+/* Consultas de medios para pantallas medianas y de escritorio */
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 600px;
+        margin: 2.5rem auto;
+    }
+
+    form, .confirmation-card {
+        padding: 2rem 2.5rem;
+    }
+
+    .stars {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
